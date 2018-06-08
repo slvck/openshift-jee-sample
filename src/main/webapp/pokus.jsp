@@ -172,6 +172,7 @@ if (("slavik").equals(request.getParameter("sourceform"))) {
                 public String call() {
                   try {
                     final URL url = new URL(urlStr);
+                    System.out.println("XXX '" + urlStr + "'");
                     final URLConnection conn = url.openConnection();
                     conn.connect();
                     final InputStream in = new BufferedInputStream(conn.getInputStream());
