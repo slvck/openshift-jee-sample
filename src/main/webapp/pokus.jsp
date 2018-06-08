@@ -32,7 +32,7 @@
   static String transformSnowForecast(final String str) {
     try {
       String actStr = str;
-      System.out.println("\n\n\n\n");
+      System.out.println("---------------------\n\n\n\n");
       System.out.println(str);
       System.out.println("\n\n\n\n");
       final String[] regexs = {".*(< *table.*< */ *table *>).*< *table.*"};
@@ -40,7 +40,7 @@
         final Pattern pat = Pattern.compile(regex, Pattern.DOTALL);
         final Matcher mat = pat.matcher(actStr);
         if (!mat.matches()) {
-          throw new IllegalArgumentException("Neodpovida " + regex);
+          throw new IllegalArgumentException("xxNeodpovida " + regex);
         } else {
           actStr = mat.group(1);
         }
