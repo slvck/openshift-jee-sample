@@ -125,6 +125,11 @@ final String[] sfnames = {
         "IT Sulden",
         "FR Alpe-d-Huez", 
         "FR Briancon", 
+        "FR LuzArdiden", 
+        "FR MontVentoux", 
+        "SP Sierra-Nevada", 
+        "SP Pas-de-la-Casa [Creueta]", 
+        "SP Picos-De-Europa [Covadonga]", 
 };
 if (("slavik").equals(request.getParameter("sourceform"))) {
     final String pwd = request.getParameter("password");
