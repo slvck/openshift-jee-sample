@@ -32,6 +32,9 @@
   static String transformSnowForecast(final String str) {
     try {
       String actStr = str;
+      System.out.println("\n\n\n\n");
+      System.out.println(str);
+      System.out.println("\n\n\n\n");
       final String[] regexs = {".*(< *table.*< */ *table *>).*< *table.*"};
       for (final String regex : regexs) {
         final Pattern pat = Pattern.compile(regex, Pattern.DOTALL);
